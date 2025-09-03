@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">   
+        <title>javascript pracyice</title>
+
+    </head>
+
+    <body>
+        <script>
+            function de(num1,num2){
+                let result = num1 + num2;
+                return result;
+            }
+            //alert("hello world");
+            //document.write("hello world");
+            //console.log("hello world");
+            /*
+            let a = prompt("請輸入數字","");
+
+            while(isNaN(a) || a==""){
+                a = prompt("請輸入數字","");
+               
+            }  
+            while(a>0){
+                console.log(a);
+                a--;
+            }
+            console.log("結束" + a);
+            */
+            /*if(a%2==0){
+                document.write("偶數");
+            }else{
+                document.write("奇數"); 
+            }*/
+           /*
+            let result =(1+10)*10/2;
+            console.log(result);
+            document.write(result);
+            
+            console.log(de(10,20));
+            */
+
+            let nnn={age:15, name:"john", height:175, talk:function()
+                {console.log("hello 我是",this.name,"年齡",this.age,"身高",this.height);}
+            };
+            //console.log(nnn);
+            nnn.talk();
+            document.write(nnn.name);
+
+
+
+            let grade=[];
+            for(let i=0;i<5;i++){
+                let a = prompt("請輸入成績","");
+                while(isNaN(a) || a=="" || a<0 || a>100){
+                    a = prompt("請輸入成績","");
+                }  
+                grade[i]=a;
+            }
+            let sum = 0;
+            for(let i=0;i<grade.length;i++){
+                
+                sum += parseInt(grade[i]);
+                console.log(grade[i]);
+            }
+            console.log("總分" + sum);
+            console.log("平均" + sum/grade.length);
+        </script>
+
+    </body>
+
+
+
+</html>

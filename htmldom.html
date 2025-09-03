@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8"/>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>HTML DOM</title>
+        <link rel="stylesheet" href="css-st.css"/>    
+    </head>
+
+    <body class="body">
+        <!--
+        <h1>HTML DOM</h1>
+        <hr/>
+        <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+        <p id="demo"></p>
+        <hr/>
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+        <br/>
+        <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px"/>
+        <hr/>
+        <button onclick="document.getElementById('myText').style.fontSize='35px'">Big</button>
+        <button onclick="document.getElementById('myText').style.fontSize='20px'">Small</button>
+        <p id="myText" style="font-size:20px">Hello World!</p>
+        <hr/>
+        <button onclick="document.getElementById('myP').style.display='none'">Hide</button>
+        <button onclick="document.getElementById('myP').style.display='block'">Show</button>
+        <p id="myP">Hello World!</p>
+        <hr/>
+        <button onclick="document.getElementById('myDIV').style.backgroundColor='lightblue'">Blue</button>
+        <button onclick="document.getElementById('myDIV').style.backgroundColor='lightgreen'">Green</button>
+        <div id="myDIV" style="width:100px;height:100px;background-color:lightgray"></div>
+        -->
+        <div class="top"></div>
+        <h1>HTML DOM</h1>
+       
+        <div class="text" id="demo" >Hello World!</div>
+        <br/>    
+        <button 
+            class="button" 
+            id="b1" 
+            onclick="changeText()"
+            onmouseover ="over(this) "
+            onmouseout="out(this)"
+            onmousedown="down(this)"
+            onmouseup="up(this)";
+            >點我   
+        </button>
+
+
+        <button class="button" id="b2" onclick="location.reload();">重置</button>
+        <div class="text" id="te"> 哈哈哈哈哈哈哈 </div>
+        <div class="text" id="te2"> 快阿 </div>
+
+        <script>    
+            function changeText(){
+                let texts = document.querySelector("#demo");
+                texts.className = "changeText";
+                
+            }
+            function over(elem){
+                elem.style.backgroundColor = "yellow";
+                elem.style.color = "red";
+                document.getElementById("te").innerHTML = "你滑鼠移進來了";
+            }
+            function out(elem){
+                elem.style.backgroundColor = "lightgray";
+                elem.style.color = "black";
+                document.getElementById("te").innerHTML = "你滑鼠移出去了";
+            }
+            function down(elem){
+                elem.style.backgroundColor = "blue";
+                elem.style.color = "white";
+                document.getElementById("te2").innerHTML = "你按下去了";
+            }   
+            function up(elem){
+                elem.style.backgroundColor = "yellow";
+                elem.style.color = "red";
+                document.getElementById("te2").innerHTML = "你放開了";
+            }
+
+        </script>
+        
+
+
+
+    </body>

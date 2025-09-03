@@ -1,0 +1,39 @@
+.body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+.button{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text{
+    background-color: lightgray;
+    text-align: center;  
+    font-size: 20px;
+    color: blue;
+}
+.text_2{
+    background-color: lightgray;
+    text-align: center;  
+    font-size: 20px;
+    color:black;
+}
+.changeText{      
+    text-align: center;
+    color: red;
+    background-color: black;
+    width: 200px; 
+    height: 50px;
+    line-height: 50px;
+}
+.top{
+    height: 20px;
+    color: mediumblue ;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
